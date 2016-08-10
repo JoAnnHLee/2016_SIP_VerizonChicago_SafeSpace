@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!--Original Bootstrap from GWC-->
+        <!-- Latest compiled and minified CSS-->
+        <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- jQuery Library-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript-->
+        <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <link rel = "stylesheet" href = "mainPages.css">
+        <link rel="stylesheet" type="text/css" href="pictures.css">
+        <link rel="stylesheet" type="text/css" href="carousel.css">
+        
+        
+        <title>Contact Us </title>
+    </head>
+    <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="http://www.ncpc.org/topics/violent-crime-and-personal-safety">Safety</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a href="homePage.html">Home</a></li>
+	      <li><a href="profilePage.html">Profile</a></li> 
+	      <li><a href="aboutPage.html">About</a></li>
+	      <li class = "active"><a href="contactUsPage.html">Contact Us</a></li> 
+	    </ul>
+	  </div>
+	</nav>
+    <body>
+        <h3>
+            Contact Info
+        </h3>
+        <p class = "mainText">
+            SafeSpace was created by  JoAnn Lee, Crista Mondragon, and Maria Salas to increase public safety for solo wanderers.
+            <br>
+            All three girls attended the Summer Immersion Program at Girls Who Code.
+            <br>
+            
+            You can reach us at our business email <a href="mailto: safespacegwc@gmail.com">SafeSpaceGWC@gmail.com</a><br> 
+
+            
+            
+            <br><br>
+            <a id = "underline" href="https://linkedin.com/in/joannhlee"> JoAnn's LinkedIn</a>
+            <br>
+            <a id = "underline" href="https://linkedin.com/in/mariasalas219"> Maria's LinkedIn</a>
+            <br>
+            <a id = "underline" href="https://linkedin.com/in/cristamondragon"> Crista's LinkedIn</a>
+           
+        </p><br><br><br><br><br>
+        		</div>
+        		
+    		<!--US -->	
+		<div id = "pictures">
+		
+        		
+<br><br><br><br><br><br><br>
+		<div class="main_block">
+		<div class="inner_block">
+        	<figure>
+        	    <img src= "JL.jpg">
+        	    <figcaption> JoAnn Lee</figcaption>
+        	</figure>
+        	
+    	</div>
+    	<div class="inner_block">
+    	    <figure>
+        	<img src= "Crista.jpg">
+        	<figcaption>Crista Mondragon</figcaption>
+        	</figure>
+    	</div>
+    	<div class="inner_block">
+        	<figure>
+        	<img src="Maria.jpg">
+        	<figcaption> Maria Salas</figcaption>
+        	</figure>
+    	</div>    
+		</div>
+    <center>    
+    <div id="map"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat:41.878475, lng: -87.627084},
+                    zoom: 17,
+                    mapTypeId: google.maps.MapTypeId.HYBRID,
+                });
+                var gwcMarker = new google.maps.Marker({
+                    position: {lat:41.878475, lng: -87.627084},
+                    map: map,.0
+                    title: "Daley Building, DePaul University"
+                })
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+        </script>
+    </center>
+    </body>
+</html>

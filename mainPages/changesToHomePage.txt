@@ -1,0 +1,89 @@
+homePage.html
+        <script>
+          function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+                center: {lat: 44.540, lng: -78.546},
+                zoom: 8
+            });
+          }
+        </script>
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+        
+        
+        above the other initMap function
+        
+        
+        
+//My changes to home page timer
+//html
+    <div>
+      <p>Set timer instead:</p>
+      <form id="setTime-form" method="POST"> 
+        <input type="number" id="textFieldForTime" name="timeSet" placeholder="min" min="0" max="1440">
+        
+        <input type="submit" id="setTime-Form" name="submitTime" value="Set Time">
+        <button onclick="delayedAlert();">SUEFBjkwefbjifvbgtfv</button>
+        
+      </form>
+    </div>
+    <div>Arrive at destination in <span id="time">05:00</span> minutes!</div>
+    
+//javascript
+
+/*global $*/
+/*global jQuery*/
+/*global display*/
+//Home page functions in JSONURL
+
+function checkIfOkayAlert() {
+    confirm("Confirm if you are okay");
+
+}
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(minutes + ":" + seconds);
+
+        if (--timer < 0) {
+            timer = duration;
+            finished = true;
+            
+        }
+        else if (timer == 0) {
+        	//call alert here, timer set 0
+        	checkIfOkayAlert();
+        	console.log('Timer has reached 0');
+        	finished = false;
+        }
+    }, 1000);
+}
+var finished = false;
+
+$(document).ready(function(){
+    $("#setTime-form").submit(function(event){
+        console.log('Form submitted');
+        
+        var numberEntered = document.getElementById('textFieldForTime');
+        var numberEnteredIntoNumber = numberEntered.value;
+        console.log(numberEnteredIntoNumber);
+            
+        var totalMinutes = 60 * numberEnteredIntoNumber; //60 seconds times the number of minutes you want
+        console.log(totalMinutes);
+        display = $('#time');
+        
+        while (finished == false){
+            startTimer(totalMinutes, display);
+        }
+    });
+
+});

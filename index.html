@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <?php include (d.php') ?>
+    
+    <head>
+        <!--<script src="jquery-1.6.1.js"></script>
+        <script src="my_jquery.js"></script>-->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="./login/login.css">
+        <script type="text/javascript" src="./storage/saveUsers.js"></script>
+    
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                
+            <form id="signup-form" class="login-form">
+                <input type="text" name="username" placeholder="username" required="required"/>
+                <input type="password" name="password" placeholder="password" required="required"/>
+                <input type="text" name="name" placeholder="name" required="required"/>
+                <label for="email" class= "required"></label>
+                <input type="email" name="email" id= "email" value="" tabindex="2" placeholder="email address" required="required"/>
+                <input type="tel" name="tel" placeholder="your phone number" maxlength= "9" required="required"/>
+                <input type="email" name= "emergency_contact" placeholder="emergency contact email"  required="required"/>
+                <input type="submit" value="REGISTER" style="background-color:#4CAF50" onclick="window.location.href='./mainPages/homePage.html'">
+                <p class="message">Registered? <a href="./login/loginPage.html">Login</a></p>
+            </form>
+          </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <script src="jquery-1.6.1.js"></script>
+    <script src="my_jquery.js"></script>
+    
+     <?php include ('d.php') ?>
+      
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script type="text/javascript" src="./storage/saveUsers.js"></script>
+        <script type="text/javascript" src="./storage/loginUsers.js"></script>
+        
+    <div class="title"><marquee direction = "left">Safe Space: A personal safety website</marquee></div>
+    </div>
+        <div class="login-page">
+            <div class="form">
+            
+            <form class="login-form" action="../mainPages/homePage.html">
+                <input type="text" id="usernameID" placeholder="username" required="required"/>
+                <input type="password" id="passwordID" placeholder="password" required="required"/>
+                <!--<button>login</button>-->
+                <input type="submit" value="LOGIN" style="background-color:#cc99cc" onclick="window.location.href='./mainPages/homePage.html'">
+                <p class="message">Not registered? <a href="../signUpPage.html">Create an account</a></p>
+            </form>
+          </div>
+        </div>
+    </head>
+    <body>
+
+    </body>
+    
+</html>

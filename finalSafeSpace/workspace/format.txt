@@ -1,0 +1,9 @@
+Okay
+
+So let's set up a template for what things should look like:
+
+All headers and titles should be <h3>
+
+Anyother paragraphs should be <p> 
+paragraphs should be divided by <div>
+

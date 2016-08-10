@@ -1,0 +1,124 @@
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    background-color: #FFFFFF;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #4444; /* fallback for old browsers */
+    background: -webkit-gradient(linear, 100% 0, 0 0, from(#CAE4DB), to (#CAE4DB));
+    background: -webkit-linear-gradient(right, #CAE4DB,#CAE4DB);
+    background: -moz-linear-gradient(right, #CAE4DB, #CAE4DB);
+    background: -o-linear-gradient(right, #CAE4DB, #CAE4DB);
+    background: linear-gradient(right, #CAE4DB, #CAE4DB);
+    background-image: url("Chicago.jpg");
+    background-size: 2300px 1100px;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    text-decoration: underline;
+    
+
+}
+
+
+li {
+    text-align: center;
+}
+
+div {   
+    font-family: "Raleway", sans-serif;
+    margin-left:15px;
+    margin-right:15px;
+    /*text-align: center;*/
+}
+
+p, figcaption {
+    /*Text boxes for reg text*/
+    background-color: rgba(102,0,102,.8); 
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+
+    
+}
+
+a {
+    color:#9999ff;
+}
+a:hover {
+    color:#3333cc;
+}
+.navbar-default {
+  background-color:#e8edf3;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+.navbar-inverse {
+    /*background-color: #c3c3ef;*/
+    /*color: #660066;*/
+    border-radius: 8px;
+}
+.nav.navbar-nav li a:hover {
+    color: #d9ccff;
+}
+.nav.navbar-nav li a {
+    color:#cc99cc;
+}
+
+.button {
+    background-color: #cc99cc; 
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+button {
+    background-color: #cc99cc; 
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.darkPurpleText {
+    color: #660066;
+}
+input {
+    color: #660066;
+}
+input::placeholder {
+    color: #c3c3ef;
+}
+input::-webkit-input-placeholder { /* Chrome */
+  color: #c3c3ef;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #c3c3ef;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #c3c3ef;
+  opacity: 1;
+}
+input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #c3c3ef;
+  opacity: 1;
+}
+

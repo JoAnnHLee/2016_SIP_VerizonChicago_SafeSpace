@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="background.css">
+          <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    	<style>
+            #map {
+            width: 1000px;
+            height: 300px;
+
+            }
+             html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  
+    	</style>
+    	
+    	
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<!--jQuery scripts-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!--Original Bootstrap from GWC-->
+        <!-- Latest compiled and minified CSS-->
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- jQuery Library-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript-->
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel = "stylesheet" href = "mainPages.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        
+
+        <script type="text/javascript" src="homePageFunctions.js"></script>
+        <title>Home</title>
+    </head>
+    
+    <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" style="color:#cc99cc"href="http://www.ncpc.org/topics/violent-crime-and-personal-safety">Safe Space</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class = "active"><a href="#">Home</a></li>
+	      <li><a href="profilePage.html">Profile</a></li> 
+	      <li><a href="aboutPage.html">About</a></li>
+	      <li><a href="contactUsPage.html">Contact Us</a></li> 
+	    </ul>
+	  </div>
+	</nav>
+
+	
+    <body>
+		    <button class="button" style="background-color: #d9ccff; border-radius: 8px; border-style: dotted;
+		    border-color:white;"><h1 class="darkPurpleText">Safe Space</h1></button>
+		    <br><br>
+		    <h4 class="darkPurpleText">Your Location: </h4>
+
+      <div class="darkPurpleText" id="map"></div>
+       
+      <div id="controls">
+        <input id="address" type="textbox" value="" placeholder="123 Main St.">
+        <input class = "button" type="button" value=" Get Address" onclick="codeAddress()">
+      </div>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+
+    
+    <br><br><br>
+    <div class="container">
+        <h4>Set timer instead:</h4>
+        <form>
+        Minutes: <input type="text" id="mns" name="mns" value="0" size="3" maxlength="3" /> &nbsp; &nbsp; Seconds: <input type="text" id="scs" name="scs" value="0" size="2" maxlength="2" /><br/>
+        <input class="button" type="button" id="btnct" value="Start Timer" onclick="countdownTimer()"/>
+        <!--<input class="button" type="button" id="btncncl" value="Stop Timer" onclick="stopTimer()"/>-->
+        </form><br>
+        <p>
+        Countdown Timer: &nbsp; <span id="showmns">00</span>:<span id="showscs">00</span>
+        </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <br><br>
+    <form action="http://maps.google.com/maps" method="get" target="_blank">
+       <h4><label for="saddr">Enter Address to get directions</label></h4>
+       <input type="text" name="saddr" placeholder="456 Central Rd."/>
+       <input type="hidden" name="daddr" value="DePaul University" />
+       <input class="button" type="submit" value="Get Directions" />
+    </form>
+    <br><br><br><br><br>
+  </body>
+</html>
